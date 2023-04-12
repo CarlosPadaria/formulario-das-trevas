@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Pesquisa de satisfação Dark Devs</h1>
+            <p id="description">Contribua para essa pesquisa das trevas</p>
+        </header>
+        <form id="survey-form">
+            <div class="item">
+                <label id="name-label" for="name">
+                    Nome
+                </label>
+                <input required placeholder="Nome" type="text" name="name" id="name"  class="inline">
+            </div>
+            <div class="item">
+                <label id="email-label" for="email">
+                    Email
+                </label>
+                <input required placeholder="Nome" class="inline" type="email" id="email" name="email">
+            </div class="item">
+            <div class="item">
+                <label id="number-label" for="age">
+                    Idade
+                </label>
+                <input required class="inline" id="number" placeholder="Idade" type="number" min="13" max="120" name="age" id="age" >
+            </div>
+            <div class="item">
+                <label id="position-label">
+                    Qual opção melhor descreve a sua posição atual?
+                </label>
+                <select id="dropdown" name="dropdown" class="inline">
+                    <option value="estudando">
+                        Só estudando
+                    </option>
+                    <option value="trabalhando">
+                        Trabalhando
+                    </option>
+                    <option value="estagiando">
+                        Estagiando
+                    </option>
+                    <option value="nao-dizer">
+                        Prefiro não dizer
+                    </option>
+                    <option value="outro">
+                        Outro
+                    </option>
+                </select>
+            </div>
+            <div class="item">
+                <label for="recommend">
+                    Você recomendaria a Dark Devs para um amigo?
+                </label>
+                <label>
+                    <input type="radio" name="recommend" value="sim">
+                    Claro
+                </label>
+                <label>
+                    <input type="radio" name="recommend" value="talvez">
+                    Talvez
+                </label>
+                <label>
+                    <input type="radio" name="recommend" value="nao">
+                    Não
+                </label>
+            </div>
+            <div class="item">
+                <label>
+                    O que você gostaria que melhorasse?
+                </label>
+                <label>
+                    <input name="prefer" value="mais-cursos" type="checkbox">
+                    Mais cursos
+                </label>
+                <label>
+                    <input name="prefer" value="videos" type="checkbox">
+                    Videos
+                </label>
+                <label>
+                    <input name="prefer" value="forum" type="checkbox">
+                    Fórum
+                </label>
+            </div>
+            <div class="item">
+                <label>Algum comentário ou sugestão?</label>
+                <textarea class="inline">
+
+                </textarea>
+            </div>
+            <div class="item">
+                <input id="submit" type="submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
